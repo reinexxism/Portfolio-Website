@@ -101,12 +101,21 @@ p {
 
 /* Navbar */
 #navbar {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-dark-pink);
+  background-color: transparent;
   align-items: center;
-  color: var(--color-light-white);
+  color: var(--color-white);
   padding: 16px;
+  z-index: 1;
+  transition: all var(--animation-duration) ease-in-out;
+}
+
+#navbar.navbar--dark {
+  background-color: var(--color-dark-pink);
+  padding: 8px;
 }
 
 .navbar__logo {
@@ -132,6 +141,11 @@ p {
   color: var(--color-dark-grey);
 }
 
+.navbar__menu__item.active {
+  border: 1px solid var(--color-white);
+  border-radius: var(--size-border-radius);
+}
+
 .navbar__toggle-btn {
   position: absolute;
   top: 24px;
@@ -145,6 +159,7 @@ p {
 #home {
   background: url(image/background-image.png) center/cover no-repeat;
   padding: 40px;
+  padding-top: 120px;
   text-align: center;
 }
 
