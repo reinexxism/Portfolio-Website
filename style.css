@@ -142,6 +142,11 @@ p {
 .home__avatar {
   width: 250px;
   height: 250px;
+  transition: var(--animation-duration) ease;
+}
+
+.home__avatar:hover {
+  transform: scale(1.3);
 }
 
 .home__title,
@@ -298,5 +303,3 @@ p {
 }
 
 /* Work */
-#Work {
-}
