@@ -5,8 +5,12 @@
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
   --color-pink: #fe918d;
-  --color-dark-pink: #ff6863;
+  --color-baby-pink: #ffcdd2;
+  --color-dark-pink: #cb9ca1;
+  --color-light-pink: #ffcccb;
+  --color-heavy-pink: #c48b9f;
   --color-dark-grey: #4d4d4d;
+  --color-p-pink: #f0a3a3;
   --color-grey: #616161;
   --color-light-grey: #7c7979;
   --color-blue: #73aace;
@@ -99,7 +103,7 @@ p {
 #navbar {
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-pink);
+  background-color: var(--color-dark-pink);
   align-items: center;
   color: var(--color-light-white);
   padding: 16px;
@@ -123,8 +127,9 @@ p {
 }
 
 .navbar__menu__item:hover {
-  background-color: var(--color-dark-pink);
+  background-color: var(--color-light-pink);
   border-radius: var(--size-border-radius);
+  color: var(--color-dark-grey);
 }
 
 .navbar__menu__item.active {
@@ -191,7 +196,7 @@ p {
   border: 1px solid var(--color-pink);
   border-radius: 50%;
   margin-bottom: 16px;
-  color: var(--color-vergandy);
+  color: var(--color-heavy-pink);
 }
 
 .major__title,
@@ -242,7 +247,7 @@ p {
 
 /* Skills */
 #skills {
-  background-color: var(--color-vergandy);
+  background-color: var(--color-baby-pink);
 }
 
 .skillset {
@@ -317,7 +322,7 @@ p {
 
 .category__btn.active,
 .category__btn:hover {
-  background-color: var(--color-pink);
+  background-color: var(--color-p-pink);
   color: var(--color-white);
 }
 
@@ -385,7 +390,7 @@ p {
 }
 
 .project__description h3 {
-  color: var(--color-dark-pink);
+  color: var(--color-heavy-pink);
   font-weight: bold;
 }
 
@@ -439,10 +444,40 @@ p {
 }
 
 .testimonial__speech-bubble a {
-  color: var(--color-pink);
+  color: var(--color-p-pink);
+  font-weight: bold;
+}
+
+.testimonial__speech-bubble .name {
   font-weight: bold;
 }
 
 .testimonial__speech-bubble p {
+  color: var(--color-light-grey);
+}
+
+/* Contact */
+#contact {
+  background-color: var(--color-vergandy);
+}
+
+.contact__title,
+.contact__email,
+.contact__right {
+  color: var(--color-white);
+}
+
+.contact__title {
+  margin: 32px 0;
+}
+
+.contact__links {
+  font-size: var(--font-large);
+  margin: 24px 0;
+  transition: all var(--animation-duration) ease-in;
+}
+
+.contact__links i:hover {
+  transform: scale(1.2);
   color: var(--color-light-grey);
 }
